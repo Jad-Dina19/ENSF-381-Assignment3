@@ -112,3 +112,9 @@ width: 300px;
 margin: 0 auto;
 text-align: center;
 }
+
+.flavor-card img{
+    border-radius: 10px;
+    width: 80px;
+    height: 90px;
+}

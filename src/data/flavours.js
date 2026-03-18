@@ -37,7 +37,7 @@ const flavors = [
     price: "$5.79",
     description: "Smooth caramel ice cream with bits of toffee crunch.",
     duration: "11 weeks",
-    image: "images/caramel.jpg"
+    image: "images/chocolate.jpg"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const flavors = [
     price: "$5.69",
     description: "Creamy vanilla base loaded with chocolate cookie pieces.",
     duration: "8 weeks",
-    image: "images/cookiescream.jpg"
+    image: "images/vanilla.jpg"
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const flavors = [
     price: "$5.39",
     description: "Tropical mango ice cream bursting with fruity flavor.",
     duration: "6 weeks",
-    image: "images/mango.jpg"
+    image: "images/vanilla.jpg"
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const flavors = [
     price: "$5.49",
     description: "Smooth blueberry ice cream with a naturally sweet finish.",
     duration: "7 weeks",
-    image: "images/blueberry.jpg"
+    image: "images/vanilla.jpg"
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const flavors = [
     price: "$5.89",
     description: "Nutty pistachio ice cream with a rich and creamy texture.",
     duration: "10 weeks",
-    image: "images/pistachio.jpg"
+    image: "images/mint.jpg"
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const flavors = [
     price: "$5.59",
     description: "Bold coffee-flavored ice cream perfect for espresso lovers.",
     duration: "9 weeks",
-    image: "images/coffee.jpg"
+    image: "images/chocolate.jpg"
   }
 ];
 
