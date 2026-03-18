@@ -18,7 +18,7 @@ const flavors = [
   {
     id: 3,
     name: "Strawberry Swirl",
-    price: "$5.29",
+    price: 5.29,
     description: "Sweet strawberry ice cream with ribbons of strawberry sauce.",
     duration: "7 weeks",
     image: "images/strawberry.jpg"
@@ -26,7 +26,7 @@ const flavors = [
   {
     id: 4,
     name: "Mint Chip Blast",
-    price: "$5.59",
+    price: 5.59,
     description: "Cool mint ice cream packed with crunchy chocolate chips.",
     duration: "9 weeks",
     image: "images/mint.jpg"
@@ -34,7 +34,7 @@ const flavors = [
   {
     id: 5,
     name: "Caramel Crunch",
-    price: "$5.79",
+    price: 5.79,
     description: "Smooth caramel ice cream with bits of toffee crunch.",
     duration: "11 weeks",
     image: "images/chocolate.jpg"
@@ -42,7 +42,7 @@ const flavors = [
   {
     id: 6,
     name: "Cookies & Cream",
-    price: "$5.69",
+    price: 5.69,
     description: "Creamy vanilla base loaded with chocolate cookie pieces.",
     duration: "8 weeks",
     image: "images/vanilla.jpg"
@@ -50,7 +50,7 @@ const flavors = [
   {
     id: 7,
     name: "Mango Tango",
-    price: "$5.39",
+    price: 5.39,
     description: "Tropical mango ice cream bursting with fruity flavor.",
     duration: "6 weeks",
     image: "images/vanilla.jpg"
@@ -58,7 +58,7 @@ const flavors = [
   {
     id: 8,
     name: "Blueberry Bliss",
-    price: "$5.49",
+    price: 5.49,
     description: "Smooth blueberry ice cream with a naturally sweet finish.",
     duration: "7 weeks",
     image: "images/vanilla.jpg"
@@ -66,18 +66,10 @@ const flavors = [
   {
     id: 9,
     name: "Pistachio Delight",
-    price: "$5.89",
+    price: 5.89,
     description: "Nutty pistachio ice cream with a rich and creamy texture.",
     duration: "10 weeks",
     image: "images/mint.jpg"
-  },
-  {
-    id: 10,
-    name: "Coffee Craze",
-    price: "$5.59",
-    description: "Bold coffee-flavored ice cream perfect for espresso lovers.",
-    duration: "9 weeks",
-    image: "images/chocolate.jpg"
   }
 ];
 

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import reviews from "./data/reviews"
 
 
-function Header() {
+export function Header() {
     return (
         <div>
             <header>
@@ -14,7 +14,7 @@ function Header() {
             </header>
             <div className="navbar">
                 <a href="/">Home</a>
-                <a href="/flavors">Flavors</a>
+                <a href="/FlavoursPage">Flavors</a>
                 <a to="/login">Login</a>
             </div>
         </div>
@@ -79,15 +79,13 @@ function MainSection(){
     )
 }
 
-function Footer(){
+export function Footer(){
     return(
         <footer>
             © 2026 Sweet Scoop Ice Cream Shop. All rights reserved.
         </footer>
     )
 }
-
-
 
 export default function Home(){
     return(
