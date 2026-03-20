@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Header, Footer } from "./Homepage";
 import flavors from "./data/flavours";
 
@@ -26,6 +26,7 @@ function FlavourCatalog({ addToOrder }) {
         <div className="flavor-grid">
             {flavors.map((flavor) => (
                 <FlavorItem
+                    key={flavor.id}
                     flavor={flavor}
                     addToOrder={addToOrder}
                 />
@@ -52,9 +53,9 @@ function OrderItem({ item, remove }) {
 function OrderList({ order, removeFromOrder }) {
     let total = 0;
     order.forEach((element) => {
-        total += element.price;
-        
+        total += element.price * element.quantity;
     });
+
     return (
         <div className="order-list">
             <h2>Your Order</h2>
@@ -63,19 +64,34 @@ function OrderList({ order, removeFromOrder }) {
             ) : (
                 order.map((item) => (
                     <OrderItem
+                        key={item.id}
                         item={item}
                         remove={removeFromOrder}
                     />
                 ))
             )}
             <h3>Total: ${total.toFixed(2)}</h3>
-
         </div>
     );
 }
 
 export default function Flavors() {
     const [order, setOrder] = useState([]);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        const savedOrder = localStorage.getItem("sweetScoopOrder");
+        if (savedOrder) {
+            setOrder(JSON.parse(savedOrder));
+        }
+        setIsLoaded(true);
+    }, []);
+
+    useEffect(() => {
+        if (isLoaded) {
+            localStorage.setItem("sweetScoopOrder", JSON.stringify(order));
+        }
+    }, [order, isLoaded]);
 
     function addToOrder(flavor) {
         setOrder((prevOrder) => {

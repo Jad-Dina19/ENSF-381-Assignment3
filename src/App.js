@@ -4,9 +4,6 @@ import "./styles.css";
 import Flavors from "./FlavoursPage"
 
 
-
-
-
 function App() {
   return (
     <BrowserRouter>
